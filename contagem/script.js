@@ -12,8 +12,8 @@ function contar(){
         res.innerText = 'Impossível contar!'
     }else if(passo == 0){
         alert('Passo inválido! Considerando PASSO 1')
-        for(inicio = 1; inicio >= fim; passo){
-            
+        for(inicio = 1; inicio >= fim; passo++){
+
         }
     }
 
