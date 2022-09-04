@@ -36,6 +36,15 @@ function verificar(){
 
         }else{
             genero = 'Mulher'
+            if(idade >= 0 && idade <= 10){
+                img.setAttribute('src', './img/bebe-f.png')
+            }else if(idade <= 18){
+                img.setAttribute('src', './img/jovem-f.png')
+            }else if(idade <= 60){
+                img.setAttribute('src', './img/adulto-f.png')
+            }else{
+                img.setAttribute('src', './img/idoso-f.png')
+            }
         }
     }
 
