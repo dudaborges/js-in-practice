@@ -16,14 +16,21 @@ function verificar(){
         var genero = ''
         var idade = anoAtual - anoNasc.value
         var res = document.getElementById('res')
-        
+        var img = document.createElement('img')
+        img.setAttribute('id', 'foto')
 
         
         //se por acaso o radio sexo estiver selecionado na posição um, a variável gênero vai receber a string 'homem'
         if(radioSexo[0].checked){
             genero = 'Homem'
             if(idade >= 0 && idade <= 10){
-
+                img.setAttribute('src', './img/bebe-m.png')
+            }else if(idade <= 18){
+                img.setAttribute('src', './img/jovem-m.png')
+            }else if(idade <= 60){
+                img.setAttribute('src', './img/adulto-m.png')
+            }else{
+                img.setAttribute('src', './img/idoso-m.png')
             }
 
 
@@ -33,5 +40,6 @@ function verificar(){
     }
 
     res.innerText = `Detectamos ${genero} com ${idade} anos`
+    res.appendChild(img)
 }
 
