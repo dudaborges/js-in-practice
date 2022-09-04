@@ -18,3 +18,13 @@
 //subtração não gera concatenação
 //É preciso converter a string para number, quando for adição.
 
+function ver(){
+    let nome = document.getElementById('txtnome')
+    let res = document.getElementById('res')
+
+    let qntLetras = nome.value.length
+
+    res.innerHTML = `Seu nome tem ${qntLetras} letras`
+}
+
+//.value.length serve para ver a quantidade de dígitos tanto para number quanto para string
