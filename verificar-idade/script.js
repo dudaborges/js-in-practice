@@ -14,7 +14,14 @@ function verificar(){
     if (anoNasc.value.length == 0 || anoNasc.value > anoAtual){
         alert('[ERRO] Por favor, preencha os espaços corretamente!')
     }else{
-        alert('ok')
+        var res = document.getElementById('res')
+        var idade = anoAtual - anoNasc.value
+        
+
+        if(idade <= 10 && idade > 0){
+            res.innerText = `Você é um homem/mulher de ${idade} anos`
+            
+        }
     }
 
 
