@@ -1,8 +1,7 @@
 function verificar(){
     //criar as variáveis, para dar nome aos valores
     var anoNasc = document.getElementById('txtano')
-    var mulher = document.getElementById('fem')
-    var homem = document.getElementById('masc')
+    var radioSexo = document.getElementsByName('radsex')
 
     //para calcular o ano de nascimento, precisamos pegar o ano atual
     var diaHoje = new Date()
@@ -14,16 +13,25 @@ function verificar(){
     if (anoNasc.value.length == 0 || anoNasc.value > anoAtual){
         alert('[ERRO] Por favor, preencha os espaços corretamente!')
     }else{
-        var res = document.getElementById('res')
+        var genero = ''
         var idade = anoAtual - anoNasc.value
+        var res = document.getElementById('res')
         
 
-        if(idade <= 10 && idade > 0){
-            res.innerText = `Você é um homem/mulher de ${idade} anos`
-            
+        
+        //se por acaso o radio sexo estiver selecionado na posição um, a variável gênero vai receber a string 'homem'
+        if(radioSexo[0].checked){
+            genero = 'Homem'
+            if(idade >= 0 && idade <= 10){
+
+            }
+
+
+        }else{
+            genero = 'Mulher'
         }
     }
 
-
+    res.innerText = `Detectamos ${genero} com ${idade} anos`
 }
 
