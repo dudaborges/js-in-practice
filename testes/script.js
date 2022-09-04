@@ -28,3 +28,8 @@ function ver(){
 }
 
 //.value.length serve para ver a quantidade de dígitos tanto para number quanto para string
+
+var n1 = 2
+var res = n1.value 
+
+//Não é q o .value não funciona apenas com String, é que o .value serve para PEGAR O VALOR NO INPUT. Não faz sentido usá-lo assim e uma variável.
