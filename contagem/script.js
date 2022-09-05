@@ -6,6 +6,7 @@ function contar(){
 
     if(tinicio.value.length == 0 || tfim.value.length == 0 || tpasso.value.length == 0){
         alert('[ERRO] Faltam dados!')
+        res.innerHTML = 'Impossível contar!'
     }else{
         res.innerHTML = 'Contando: '
         var inicio = Number(tinicio.value)
