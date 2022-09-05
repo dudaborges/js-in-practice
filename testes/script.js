@@ -1,4 +1,4 @@
-// function ver(){
+// function somar(){
 //     var n1 = document.getElementById('n1')
 //     var n2 = document.getElementById('n2')
 //     var soma = n1.value + n2.value
@@ -9,14 +9,14 @@
 
 // }
 
-// var hoje = new Date()
-// var anoAtual = hoje.getFullYear()
-// var n = '2'
-// var soma = anoAtual - n
-// console.log(soma)
+var hoje = new Date()
+var anoAtual = hoje.getFullYear()
+var n = '2'
+var soma = anoAtual - n
+console.log(soma)
 
-//subtração não gera concatenação
-//É preciso converter a string para number, quando for adição.
+// subtração não gera concatenação
+// É preciso converter a string para number, quando for adição.
 
 function ver(){
     let nome = document.getElementById('txtnome')
@@ -32,4 +32,4 @@ function ver(){
 var n1 = 2
 var res = n1.value 
 
-//Não é q o .value não funciona apenas com String, é que o .value serve para PEGAR O VALOR NO INPUT. Não faz sentido usá-lo assim e uma variável.
+//Não é q o .value apenas não funciona com String, é que o .value serve para PEGAR O VALOR NO INPUT. Não faz sentido usá-lo assim e uma variável.
