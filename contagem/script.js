@@ -17,8 +17,9 @@ function contar(){
         //o contador começa no número do início, o contador tem uma condição que não pode ultrapassar o fim, e o incremento no contador é adicionar o passo
         for(var contador = inicio; contador <= fim; contador += passo){
             //+= é o que ele já tem mais alguma coisa
-            res.innerHTML += `${contador}`
+            res.innerHTML += `${contador} \u{1F449}`
         }
+        res.innerHTML += `\u{1f3c1}`
     }
 }
 
