@@ -14,4 +14,8 @@
 //     console.log(conta)
 // }
 
-
+let n = 2
+for (let c = 1; c <= 10; c++){
+     let conta = c * n
+     console.log(conta)
+}
