@@ -11,3 +11,5 @@
 // imprima o seguinte formato de texto com todos os números:
 // "O número x está na posição y"
 
+let num = [10, 4, 7, 12]
+
