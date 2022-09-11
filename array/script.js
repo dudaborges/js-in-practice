@@ -28,3 +28,8 @@ console.log(num)
 console.log("Questão 5 - Adicione o número 1 a lista")
 num.push(1)
 console.log(num)
+
+console.log("Questão 6 - imprima o seguinte formato de texto com todos os números: O número x está na posição y")
+for(let indice in num){
+    console.log(`O número ${num[indice]} está na posição ${indice}`)
+}
