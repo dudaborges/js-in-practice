@@ -24,3 +24,7 @@ console.log(`A lista tem ${num.length} ítens`)
 console.log("Questão 4 - Substitua o 7 pelo 8")
 num[2] = 8
 console.log(num)
+
+console.log("Questão 5 - Adicione o número 1 a lista")
+num.push(1)
+console.log(num)
