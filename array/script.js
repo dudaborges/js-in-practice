@@ -13,3 +13,5 @@
 
 let num = [10, 4, 7, 12]
 
+console.log(`O número 4 está na posição ${num.indexOf(4)}`)
+
