@@ -18,5 +18,5 @@ console.log(num)
 console.log("Questão 2 - Em que posição está o 4?")
 console.log(`O número 4 está na posição ${num.indexOf(4)}`)
 
-
-
+console.log("Tem quantos ítens na lista?")
+console.log(`A lista tem ${num.length} ítens`)
