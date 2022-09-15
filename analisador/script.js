@@ -6,6 +6,7 @@ let res = document.getElementById('res')
 function adicionar(num){
     num = [Number(numtxt.value)]
     arrayNum.push(num)
+    arrayNum.sort()
 
     if(numtxt.value.length == 0){
         alert('Preencha o campo!')
@@ -23,9 +24,12 @@ function adicionar(num){
 
 
 function finalizar(){
+
     res.innerHTML = `Ao todo, temos ${arrayNum.length} números cadastrados. <br>`
 
-    arrayNum.sort()
+    // let indiceMaior = arrayNum.length - 1
+    // res.innerHTML += `O maior valor informado foi ${arrayNum[indiceMaior]} <br>`
+
     res.innerHTML += `O menor valor informado foi ${arrayNum[0]} <br>`
 
     res.innerHTML += arrayNum
