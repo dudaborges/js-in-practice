@@ -30,7 +30,6 @@ function finalizar(){
     // let indiceMaior = arrayNum.length - 1
     // res.innerHTML += `O maior valor informado foi ${arrayNum[indiceMaior]} <br>`
 
-    res.innerHTML += `O menor valor informado foi ${arrayNum[0]} <br>`
 
     res.innerHTML += arrayNum
 
