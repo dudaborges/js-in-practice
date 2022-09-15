@@ -18,11 +18,16 @@ function adicionar(num){
             selectNum.appendChild(item)
         }
     }
-    res.innerHTML = arrayNum
 
 }
 
 
 function finalizar(){
+    res.innerHTML = `Ao todo, temos ${arrayNum.length} números cadastrados. <br>`
+
+    arrayNum.sort()
+    res.innerHTML += `O menor valor informado foi ${arrayNum[0]} <br>`
+
+    res.innerHTML += arrayNum
 
 }
