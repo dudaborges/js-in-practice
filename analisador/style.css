@@ -17,6 +17,10 @@ section{
     
 }
 
+#selectNum{
+    width: 150px;
+}
+
 div{
     text-align: center;
     padding: 7px;
