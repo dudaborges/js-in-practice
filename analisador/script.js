@@ -6,6 +6,7 @@ let res = document.getElementById('res')
 function adicionar(num){
     num = [Number(numtxt.value)]
     arrayNum.push(num)
+    res.innerHTML = '' //para limpar o res quando add outro numero
 
 
     if(numtxt.value.length == 0){
@@ -30,11 +31,9 @@ function finalizar(){
     if(arrayNum.length == 0){
         alert('Adicione valores antes de finalizar!')
     }else{
-        res.innerHTML = `Ao todo, temos ${arrayNum.length} números cadastrados. <br>`
+        res.innerHTML = `<p>Ao todo, temos ${arrayNum.length} números cadastrados. </p> <br>`
 
-        res.innerHTML = `Ao todo, temos ${arrayNum.length} números cadastrados. <br>`
-    
-    
+
         res.innerHTML += arrayNum
     }
 
