@@ -27,12 +27,16 @@ function adicionar(num){
 
 function finalizar(){
 
+    if(arrayNum.length == 0){
+        alert('Adicione valores antes de finalizar!')
+    }else{
+        res.innerHTML = `Ao todo, temos ${arrayNum.length} números cadastrados. <br>`
 
-    res.innerHTML = `Ao todo, temos ${arrayNum.length} números cadastrados. <br>`
+        res.innerHTML = `Ao todo, temos ${arrayNum.length} números cadastrados. <br>`
+    
+    
+        res.innerHTML += arrayNum
+    }
 
-    res.innerHTML = `Ao todo, temos ${arrayNum.length} números cadastrados. <br>`
-
-
-    res.innerHTML += arrayNum
 
 }
