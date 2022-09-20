@@ -3,9 +3,26 @@ let selectNum = document.getElementById('selectNum')
 let arrayNum = []
 let res = document.getElementById('res')
 
+function isNumero(n){
+    if(Number(n) >= 1 && Number(n) <= 100){
+        return true
+    }else{
+        return false
+    }
+}
+
+
+
+
 function adicionar(num){
     num = [Number(numtxt.value)]
     arrayNum.push(num)
+
+    if(isNumero(num.value) && inLista(num.value, valores)){
+        alert('tudo ok')
+    }else{
+        alert('Valor inválido ou já encontrado na lista.')
+    }
 
     if(numtxt.value.length == 0){
         alert('Preencha o campo!')
