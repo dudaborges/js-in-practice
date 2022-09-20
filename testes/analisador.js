@@ -1,9 +1,5 @@
-let arrayNum = [2, 8, 1]
-
-
-arrayNum.push(7)
-
-console.log(arrayNum)
+let arrayNum = [75, 3, 9, 80]
 
 arrayNum.sort()
+
 console.log(arrayNum)
