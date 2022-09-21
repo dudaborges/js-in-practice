@@ -12,7 +12,7 @@ function gerar(){
         alert('Preencha as notas entre 1 a 10!')
     }else{
         let media = (n1 + n2 + n3) / 3
-        res.innerText = `A sua média deu ${media}`
+        res.innerText = `A sua média deu ${media.toFixed(1)}`
         if (media >= 7){
             res.innerHTML += '<br> aprovado!'
         }else{
