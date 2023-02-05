@@ -49,18 +49,65 @@ console.log(filterTerror)
 // every retorna sempre true ou false
 
 const etapaEliminaria = [
-    {curso: 'a'}
+    {
+        nome: 'Maira',
+        sexo: 'F'
+    },
+
+    {
+        nome: 'Gisele',
+        sexo: 'F'
+    },
+
+    {
+        nome: 'Bianca',
+        sexo: 'f'
+    }
 ]
 
 const requisitos = etapaEliminaria.every(requisito => {
-    return requisito.curso == 'a'
+    return requisito.sexo == 'F' || 'f'
 })
 
 if (requisitos == true){
     console.log('Atendeu aos requisitos!') 
 }else{
     console.log('Não atendeu aos requisitos!') 
+} 
+
+const cachorros = [
+
+    {
+        nome: 'jully',
+        raca: 'vira-lata'
+    },
+
+    {
+        nome: 'bibi',
+        raca: 'vira-lata'
+    },
+
+    {
+        nome: 'gisele',
+        raca: 'pinscher'
+    },
+
+    {
+        nome: 'olga',
+        raca: 'pug'
+    }
+]
+
+const encontrarCachorro = cachorros.find(cachorro => {
+    return cachorro.nome == 'jully' && cachorro.raca == 'vira-lata'
+})
+
+if (encontrarCachorro){
+    console.log(`Cachorro encontrado! Informações: ${encontrarCachorro.nome}, ${encontrarCachorro.raca}`)
+}else{
+    console.log('Não existe!')
 }
+
 
 
 
