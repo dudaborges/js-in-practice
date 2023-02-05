@@ -109,6 +109,47 @@ if (encontrarCachorro){
 }
 
 
+const candidatos = [
+    {
+        nome: 'Marilene',
+        sexo: 'F',
+        raca: 'Amarelo(a)',
+        idade: 23
+    },
+
+    {
+        nome: 'Karol',
+        sexo: 'F',
+        raca: 'Preto(a)',
+        idade: 17
+    },
+
+    {
+        nome: 'Pedro Henrique',
+        sexo: 'M',
+        raca: 'Branco(a)',
+        idade: 29
+    },
+
+    {
+        nome: 'Thiago',
+        sexo: 'M',
+        raca: 'Branco(a)',
+        idade: 17
+    }
+]
+
+const canditadoPreto = candidatos.some(candidato => {
+
+    return candidato.raca == 'Preto(a)'
+})
+
+if(canditadoPreto){
+    console.log('Existe!')
+
+}else{
+    console.log('Nenhum foi encontrado!')
+}
 
 
 
